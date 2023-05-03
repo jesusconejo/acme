@@ -1,0 +1,14 @@
+# Se utiliza una imagen de Java 11
+FROM openjdk:11-jdk-slim
+
+# Se crea la carpeta de trabajo en el contenedor
+WORKDIR /app
+
+# Se copian los archivos del proyecto a la carpeta de trabajo
+COPY target/abs-0.0.1-SNAPSHOT.jar
+
+# Se expone el puerto 8080 para acceder a la aplicación
+EXPOSE 8080
+
+# Se especifica el comando que se ejecutará al iniciar el contenedor
+CMD ["java", "-jar", "app.jar"]

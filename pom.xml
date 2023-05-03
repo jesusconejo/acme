@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.acme</groupId>
     <artifactId>abs</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+
     <name>AcmeAbastecimiento</name>
     <description>AcmeAbastecimiento</description>
     <properties>
